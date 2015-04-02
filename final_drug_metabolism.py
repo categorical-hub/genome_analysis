@@ -103,6 +103,7 @@ def main():
 	load_report_to_dictionary()
 	analyze_report()
 
+	print(color.BOLD + "Drugs with modified metabolism for: " + argv[1] + color.END)
 	for drug, desc in sorted(drug_dict.items()):
 		print(color.BOLD + drug + color.END + " modified metabolism due to: " + color.PURPLE + desc + color.END)		
 
